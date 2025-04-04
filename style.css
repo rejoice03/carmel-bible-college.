@@ -29,10 +29,18 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+.logo-jpg {
+    width: 65px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 .nav-links {
