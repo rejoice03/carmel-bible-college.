@@ -255,6 +255,10 @@ section {
     flex: 1;
 }
 
+.about-text p {
+    margin-bottom: 1em;
+}
+
 .about-image {
     flex: 1;
     text-align: center;
