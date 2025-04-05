@@ -436,6 +436,38 @@ section {
     display: block;
 }
 
+.student-details h4 {
+    color: #1a3a5f;
+}
+
+.student-details p {
+    margin: 0;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.testimonial-controls button {
+    background-color: #1a3a5f;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.testimonial-controls button:hover {
+    background-color: #ffd700;
+}
+
 /*Responsive Web */
 @media (max-width: 768px) {
     .nav-links {
