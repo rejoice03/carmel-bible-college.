@@ -270,6 +270,15 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.about-image h3 {
+    color: #1a3a5f;
+}
+
+.about-image p {
+    font-style: italic;
+    color: #666;
+}
+
 /* Courses Section */
 .courses-container {
     display: grid;
@@ -471,6 +480,71 @@ section {
 .testimonial-controls button:hover {
     background-color: #ffd700;
 }
+
+/* Gallery Section Main Page */
+.gallery {
+    background-color: #f9f9f9;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.gallery-description {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.gallery-cta {
+    margin-top: 2rem;
+}
+
+.gallery-button {
+    display: inline-block;
+    background-color: #1a3a5f;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+}
+
+.gallery-button:hover {
+    background-color: #ffd700;
+    color: #1a3a5f;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Second Page */
+.gallery-header {
+    margin-top: 70px;
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1200/500') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.gallery-header-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.gallery-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.gallery-header p {
+    font-size: 1.2rem;
+}
+
+
 
 /*Responsive Web */
 @media (max-width: 768px) {
