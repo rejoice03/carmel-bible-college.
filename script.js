@@ -76,4 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         showTestimonial(currentTestimonial);
     }, 5000);
+
+    // Elements
+    
 })
