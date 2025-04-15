@@ -725,7 +725,44 @@ section {
     gap: 1rem;
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
 
+.form-group label {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #1a3a5f;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-self: start;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffd700;
+    color: #1a3a5f;
+}
 
 /*Responsive Web */
 @media (max-width: 768px) {
