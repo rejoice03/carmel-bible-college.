@@ -403,6 +403,10 @@ section {
     color: #666;
 }
 
+.faculty-2pg {
+    padding-top: 110px;
+}
+
 /* Testimonials Section */
 .testimonials-container {
     max-width: 800px;
