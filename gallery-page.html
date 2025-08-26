@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery - Carmel Bible College</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" href="images/logo.jpg">
 </head>
 <body>
@@ -28,7 +29,7 @@
 
     <!-- Gallery Header -->
     <header class="gallery-header" id="gallery-header">
-        <div class="gallery-header-content">
+        <div class="gallery-header-content" data-aos="fade-up">
             <h1>Our Photo Gallery</h1>
             <p>Capturing moments of learning, growth, and community at Carmel Bible College</p>
         </div>
@@ -340,5 +341,13 @@
     </footer>
 
     <script src="gallery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 500,
+            easing: 'linear',
+        });
+    </script>
 </body>
 </html>

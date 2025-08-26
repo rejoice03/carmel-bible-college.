@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,7 +31,7 @@
     <!-- Gallery Header -->
 
     <header class="gallery-header" id="gallery-header">
-        <div class="gallery-header-content">
+        <div class="gallery-header-content" data-aos="fade-up" data-aos-offset="100">
             <h1>Our YouTube live video's</h1>
             <p>Capturing moments of learning, growth, and community at Carmel Bible College</p>
         </div>
@@ -38,35 +39,35 @@
 
 
     <div class="video-container">
-        <div class="video">
+        <div class="video" data-aos="fade-up" data-aos-offset="100">
             <iframe src="https://www.youtube.com/embed/LUj4PeVbp9k?si=cvKWxf1cXP3lszp4" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <div class="video">
+        <div class="video" data-aos="fade-up" data-aos-offset="100">
             <iframe src="https://www.youtube.com/embed/DypbMX46r-Q?si=VsYeiVxwh-LNeBh6" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <div class="video">
+        <div class="video" data-aos="fade-up" data-aos-offset="100">
             <iframe src="https://www.youtube.com/embed/6d_7st-R4WA?si=tIVnExSLMRHByUvY" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <div class="video">
+        <div class="video" data-aos="fade-up">
             <iframe src="https://www.youtube.com/embed/SOT0zzz3Igg?si=O2fanIs3oGUmW7AW" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <div class="video">
+        <div class="video" data-aos="fade-up">
             <iframe src="https://www.youtube.com/embed/XOG2snN-4qU?si=OJsDKvO1_7kMgigD"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -108,6 +109,14 @@
         <div id="back-to-top" class="back-to-top" title="Back to Top">↑</div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 500,
+            easing: 'linear',
+        });
+    </script>
 </body>
 
 </html>
