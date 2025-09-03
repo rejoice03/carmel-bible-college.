@@ -96,4 +96,14 @@ document.addEventListener('DOMContentLoaded', function () {
             behavior: 'smooth'
         });
     });
+
 })
+const navbar = document.querySelector('.navbar1');
+
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 50) {
+        navbar.classList.add('header-scrolled');
+    } else {
+        navbar.classList.remove('header-scrolled');
+    }
+});
