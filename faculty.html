@@ -39,7 +39,41 @@
             </div>
             <div class="teachers-container">
                 
-                
+                <div class="teacher-card" data-aos="fade-up">
+                    <div class="teacher-image">
+                        <img src="Images/photos/faculty/principal1.JPG" alt="Pr. Jose Chacko">
+                    </div>
+                    <div class="teacher-content">
+                        <h3>Pr. Jose Chacko</h3>
+                        <p>Principal</p>
+                        <!-- <p>Ph.D. in Biblical Studies</p> -->
+
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-aos="fade-up">
+                    <div class="teacher-image">
+                        <img src="Images/photos/faculty/pr. john waicliff.jpg" alt="Pr. John Waicliff">
+                    </div>
+                    <div class="teacher-content">
+                        <h3>Pr. John Waicliff</h3>
+                        <p>Registrar</p>
+                        <!-- <p>Ph.D. in Biblical Studies</p> -->
+
+                    </div>
+                </div>
+
+                <div class="teacher-card" data-aos="fade-up">
+                    <div class="teacher-image">
+                        <img src="Images/photos/faculty/dr. sam plammoottil.JPG" alt="Dr. Sam plammoottil">
+                    </div>
+                    <div class="teacher-content">
+                        <h3>Dr. Sam plammoottil</h3>
+                        <p>Academic Dean</p>
+                        <!-- <p>Ph.D. in Biblical Studies</p> -->
+
+                    </div>
+                </div>
                 
                 <div class="teacher-card" data-aos="fade-up">
                     <div class="teacher-image">
@@ -206,49 +240,6 @@
 
                     </div>
                 </div>
-                
-                
-            </div>
-
-            <div class="section-title" data-aos="fade-up">
-                <h2>Administrative Personnel</h2>
-            </div>
-            <div class="teachers-container">
-                <div class="teacher-card" data-aos="fade-up">
-                    <div class="teacher-image">
-                        <img src="Images/photos/faculty/principal1.JPG" alt="Pr. Jose Chacko">
-                    </div>
-                    <div class="teacher-content">
-                        <h3>Pr. Jose Chacko</h3>
-                        <p>Principal</p>
-                        <!-- <p>Ph.D. in Biblical Studies</p> -->
-
-                    </div>
-                </div>
-
-                <div class="teacher-card" data-aos="fade-up">
-                    <div class="teacher-image">
-                        <img src="Images/photos/faculty/pr. john waicliff.jpg" alt="Pr. John Waicliff">
-                    </div>
-                    <div class="teacher-content">
-                        <h3>Pr. John Waicliff</h3>
-                        <p>Registrar</p>
-                        <!-- <p>Ph.D. in Biblical Studies</p> -->
-
-                    </div>
-                </div>
-
-                <div class="teacher-card" data-aos="fade-up">
-                    <div class="teacher-image">
-                        <img src="Images/photos/faculty/dr. sam plammoottil.JPG" alt="Dr. Sam plammoottil">
-                    </div>
-                    <div class="teacher-content">
-                        <h3>Dr. Sam plammoottil</h3>
-                        <p>Academic Dean</p>
-                        <!-- <p>Ph.D. in Biblical Studies</p> -->
-
-                    </div>
-                </div>
 
                 <div class="teacher-card" data-aos="fade-up">
                     <div class="teacher-image">
@@ -283,10 +274,11 @@
 
                     </div>
                 </div>
-
-
-
+                
+                
             </div>
+
+            
 
 
 
@@ -335,6 +327,39 @@
             duration: 500,
             easing: 'linear',
         });
+    </script>
+    <script>
+        // AI Chat Widget Toggle
+    (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+            window.chatbase = (...args) => {
+                if (!window.chatbase.q) {
+                    window.chatbase.q = []
+                }
+                window.chatbase.q.push(args)
+            };
+            window.chatbase = new Proxy(window.chatbase, {
+                get(target, prop) {
+                    if (prop === "q") {
+                        return target.q
+                    }
+                    return (...args) => target(prop, ...args)
+                }
+            })
+        }
+        const onLoad = function () {
+            const script = document.createElement("script");
+            script.src = "https://www.chatbase.co/embed.min.js";
+            script.id = "FgclzYVeciSB_YrAHVR4d";
+            script.domain = "www.chatbase.co";
+            document.body.appendChild(script)
+        };
+        if (document.readyState === "complete") {
+            onLoad()
+        } else {
+            window.addEventListener("load", onLoad)
+        }
+    })();
     </script>
 </body>
 
