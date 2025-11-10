@@ -1,5 +1,11 @@
-// Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function () {
+    // Preloader
+    let preloader = document.getElementById('preloader');
+    window.addEventListener('load', function () {
+        preloader.style.display = 'none';
+    });
+    
+    // Mobile Navigation Toggle
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.querySelector('.nav-links');
 

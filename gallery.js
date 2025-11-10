@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Preloader
+    let preloader = document.getElementById('preloader');
+    window.addEventListener('load', function () {
+        preloader.style.display = 'none';
+    });
+    
     // Gallery
     // Elements
     const filterButtons = document.querySelectorAll('.filter-btn');
