@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('load', function () {
         preloader.style.display = 'none';
     });
-    
+
     // Mobile Navigation Toggle
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -145,3 +145,22 @@ window.addEventListener('scroll', function () {
         navbar.classList.remove('header-scrolled');
     }
 });
+
+// Contact Form
+$("#contactform").submit((e) => {
+    e.preventDefault()
+    $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbwvtGMVx6i0Dv2RukAylhkHiGo8oTN73r4g6_ZamUM-HsTLhMvz4r8DhZxNNtMGGaChPw/exec",
+        data: $("#contactform").serialize(),
+        method: "post",
+        success: function (response) {
+            alert("Form submitted successfully")
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error: function (err) {
+            alert("Something Error")
+
+        }
+    })
+})
