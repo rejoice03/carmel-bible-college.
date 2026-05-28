@@ -13,7 +13,7 @@
 <body>
     <!-- Preloader -->
     <div id="preloader"></div>
-    
+
     <!-- Navigation Bar-->
     <nav class="navbar1">
         <div class="nav-container">
@@ -43,6 +43,13 @@
 
 
     <div class="video-container">
+        <div class="video" data-aos="fade-up">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PYPqKIDKfb0?si=iANEJxzjGFe6VbEr"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
         <div class="video" data-aos="fade-up" data-aos-offset="100">
             <iframe src="https://www.youtube.com/embed/LUj4PeVbp9k?si=cvKWxf1cXP3lszp4" title="YouTube video player"
                 frameborder="0"
@@ -72,11 +79,13 @@
         </div>
 
         <div class="video" data-aos="fade-up">
-            <iframe src="https://www.youtube.com/embed/XOG2snN-4qU?si=OJsDKvO1_7kMgigD"
-                title="YouTube video player" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/XOG2snN-4qU?si=OJsDKvO1_7kMgigD" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+
+        
     </div>
     <!-- Footer -->
     <footer class="footer">
@@ -123,36 +132,36 @@
     </script>
     <script>
         // AI Chat Widget Toggle
-    (function () {
-        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-            window.chatbase = (...args) => {
-                if (!window.chatbase.q) {
-                    window.chatbase.q = []
-                }
-                window.chatbase.q.push(args)
-            };
-            window.chatbase = new Proxy(window.chatbase, {
-                get(target, prop) {
-                    if (prop === "q") {
-                        return target.q
+        (function () {
+            if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+                window.chatbase = (...args) => {
+                    if (!window.chatbase.q) {
+                        window.chatbase.q = []
                     }
-                    return (...args) => target(prop, ...args)
-                }
-            })
-        }
-        const onLoad = function () {
-            const script = document.createElement("script");
-            script.src = "https://www.chatbase.co/embed.min.js";
-            script.id = "FgclzYVeciSB_YrAHVR4d";
-            script.domain = "www.chatbase.co";
-            document.body.appendChild(script)
-        };
-        if (document.readyState === "complete") {
-            onLoad()
-        } else {
-            window.addEventListener("load", onLoad)
-        }
-    })();
+                    window.chatbase.q.push(args)
+                };
+                window.chatbase = new Proxy(window.chatbase, {
+                    get(target, prop) {
+                        if (prop === "q") {
+                            return target.q
+                        }
+                        return (...args) => target(prop, ...args)
+                    }
+                })
+            }
+            const onLoad = function () {
+                const script = document.createElement("script");
+                script.src = "https://www.chatbase.co/embed.min.js";
+                script.id = "FgclzYVeciSB_YrAHVR4d";
+                script.domain = "www.chatbase.co";
+                document.body.appendChild(script)
+            };
+            if (document.readyState === "complete") {
+                onLoad()
+            } else {
+                window.addEventListener("load", onLoad)
+            }
+        })();
     </script>
 </body>
 
